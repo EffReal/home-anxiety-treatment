@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+
+    <!--Page Title-->
+    <title>Effective Reality - Do I Have Anxiety?</title>
+
+    <!--Meta Keywords and Description-->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    
+    <script type="text/javascript" src="js/formcalculations.js"></script>
+    <link href="styles/anxietytest.css" rel="stylesheet" type="text/css" />
+
+   
+</head>
+    
+ 
+<body onload='hideTotal()'>
+    <div id="wrap">
+        <form action="" id="anxietytest" onsubmit="return false;">
+        </div>
+            <div class="cont_order">
+               <fieldset>
+		       <legend><h2>Do You Have Anxiety?</h2></legend>
+                <label><h3>Over the last 2 weeks, how often have you been bothered by the following problems?</h3></label><br>
+		       <label><strong>1) Feeling nervous, anxious or on edge?</strong></label><br><br>
+		       <label class='radiolabel'>Never<input type="radio"  name="selectedcake" value="Round6" onclick="calculateTotal()" /></label>&ensp;
+		       <label class='radiolabel'>Several days<input type="radio"  name="selectedcake" value="Round8" onclick="calculateTotal()" /></label>&ensp;
+                	<label class='radiolabel'>At least half of the time<input type="radio"  name="selectedcake" value="Round10" onclick="calculateTotal()" /></label>&ensp;
+                	<label class='radiolabel'>Nearly everyday<input type="radio"  name="selectedcake" value="Round12" onclick="calculateTotal()" /></label><br/>
+                <br/>
+		       <label><strong>2) Not able to stop or control your worrying?</strong></label><br><br>
+		       <label class='radiolabel'>Never<input type="radio"  name="selectedcake1" value="Round6" onclick="calculateTotal()" /></label>&ensp;
+		       <label class='radiolabel'>Several days<input type="radio"  name="selectedcake1" value="Round8" onclick="calculateTotal()" /></label>&ensp;
+                	<label class='radiolabel'>At least half of the time<input type="radio"  name="selectedcake1" value="Round10" onclick="calculateTotal()" /></label>&ensp;
+                	<label class='radiolabel'>Nearly everyday<input type="radio"  name="selectedcake1" value="Round12" onclick="calculateTotal()" /></label><br/>
+                <br/>
+		       <label><strong>3) Worrying a lot about a number of different things?</strong></label><br><br>
+		       <label class='radiolabel'>Never<input type="radio"  name="selectedcake2" value="Round6" onclick="calculateTotal()" /></label>&ensp;
+		       <label class='radiolabel'>Several days<input type="radio"  name="selectedcake2" value="Round8" onclick="calculateTotal()" /></label>&ensp;
+                	<label class='radiolabel'>At least half of the time<input type="radio"  name="selectedcake2" value="Round10" onclick="calculateTotal()" /></label>&ensp;
+                	<label class='radiolabel'>Nearly everyday<input type="radio"  name="selectedcake2" value="Round12" onclick="calculateTotal()" /></label><br/>
+                <br/>
+		        <label><strong>4) Have had trouble relaxing?</strong></label><br><br>
+		       <label class='radiolabel'>Never<input type="radio"  name="selectedcake3" value="Round6" onclick="calculateTotal()" /></label>&ensp;
+		       <label class='radiolabel'>Several days<input type="radio"  name="selectedcake3" value="Round8" onclick="calculateTotal()" /></label>&ensp;
+                	<label class='radiolabel'>At least half of the time<input type="radio"  name="selectedcake3" value="Round10" onclick="calculateTotal()" /></label>&ensp;
+                	<label class='radiolabel'>Nearly everyday<input type="radio"  name="selectedcake3" value="Round12" onclick="calculateTotal()" /></label><br/>
+                <br/>
+		        <label><strong>5) Have been so restless it's hard to keep still?</strong></label><br><br>
+		       <label class='radiolabel'>Never<input type="radio"  name="selectedcake4" value="Round6" onclick="calculateTotal()" /></label>&ensp;
+		       <label class='radiolabel'>Several days<input type="radio"  name="selectedcake4" value="Round8" onclick="calculateTotal()" /></label>&ensp;
+                	<label class='radiolabel'>At least half of the time<input type="radio"  name="selectedcake4" value="Round10" onclick="calculateTotal()" /></label>&ensp;
+                	<label class='radiolabel'>Nearly everyday<input type="radio"  name="selectedcake4" value="Round12" onclick="calculateTotal()" /></label><br/>
+                <br/>
+		       <label><strong>6) Have become easily annoyed or irritable?</strong></label><br><br>
+		       <label class='radiolabel'>Never<input type="radio"  name="selectedcake5" value="Round6" onclick="calculateTotal()" /></label>&ensp;
+		       <label class='radiolabel'>Several days<input type="radio"  name="selectedcake5" value="Round8" onclick="calculateTotal()" /></label>&ensp;
+                	<label class='radiolabel'>At least half of the time<input type="radio"  name="selectedcake5" value="Round10" onclick="calculateTotal()" /></label>&ensp;
+                	<label class='radiolabel'>Nearly everyday<input type="radio"  name="selectedcake5" value="Round12" onclick="calculateTotal()" /></label><br/>
+                <br/>
+		       <label><strong>7) You've been feeling afraid or uneasy as if something terrible will happen?</strong></label><br><br>
+		       <label class='radiolabel'>Never<input type="radio"  name="selectedcake6" value="Round6" onclick="calculateTotal()" /></label>&ensp;
+		       <label class='radiolabel'>Several days<input type="radio"  name="selectedcake6" value="Round8" onclick="calculateTotal()" /></label>&ensp;
+                	<label class='radiolabel'>At least half of the time<input type="radio"  name="selectedcake6" value="Round10" onclick="calculateTotal()" /></label>&ensp;
+                	<label class='radiolabel'>Nearly everyday<input type="radio"  name="selectedcake6" value="Round12" onclick="calculateTotal()" /></label><br/>
+                <br/>
+                <label >Filling</label>
+         
+                <select id="filling" name='filling' onchange="calculateTotal()">
+                <option value="None">Select Filling</option>
+                <option value="Lemon">Lemon($5)</option>
+                <option value="Custard">Custard($5)</option>
+                <option value="Fudge">Fudge($7)</option>
+                <option value="Mocha">Mocha($8)</option>
+                <option value="Raspberry">Raspberry($10)</option>
+                <option value="Pineapple">Pineapple($5)</option>
+                <option value="Dobash">Dobash($9)</option>
+                <option value="Mint">Mint($5)</option>
+                <option value="Cherry">Cherry($5)</option>
+                <option value="Apricot">Apricot($8)</option>
+                <option value="Buttercream">Buttercream($7)</option>
+                <option value="Chocolate Mousse">Chocolate Mousse($12)</option>
+               </select>
+                <br/>
+                <p>
+                <label for='includecandles' class="inlinelabel">Include Candles($5)</label>
+               <input type="checkbox" id="includecandles" name='includecandles' onclick="calculateTotal()" />
+               </p>
+               
+                <p>
+                <label class="inlinelabel" for='includeinscription'>Include Inscription($20)</label>
+                <input type="checkbox" id="includeinscription" name="includeinscription" onclick="calculateTotal()" />
+                <input type="text"  id="theinscription" name="theinscription" value="Enter Inscription"  />
+                </p>
+                <div id="totalPrice"></div>
+                
+                </fieldset>
+            </div>
+            
+        	<div class="cont_details">
+            	<fieldset>
+                <legend>Contact Details</legend>
+                <label for='name'>Name</label>
+                <input type="text" id="name" name='name' />
+                <br/>
+                <label for='address'>Address</label>
+                <input type="text" id="address" name='address' />
+                <br/>
+                <label for='phonenumber'>Phone Number</label>
+                <input type="text"  id="phonenumber" name='phonenumber'/>
+                <br/>
+                </fieldset>
+            </div>
+            <input type='submit' id='submit' value='Submit' onclick="calculateTotal()" />
+        </div>  
+       </form>
+	</div><!--End of wrap-->
+
+</body>
+</html>
