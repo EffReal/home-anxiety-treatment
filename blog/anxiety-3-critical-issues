@@ -3,19 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118655512-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-118655512-1');
-</script>
-    
-        
-    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us18.list-manage.com","uuid":"f3e8ff2155599b5d9f59c296a","lid":"7104b5f908"}) })</script>
-
+   
 
     <!--Page Title-->
     <title>Effective Reality-Blog</title>
